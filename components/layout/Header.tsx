@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -50,10 +50,9 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
-          {/* <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105"> */}
-
-          <h1> Apply Now</h1>
-          {/* </Button> */}
+          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105">
+            Apply Now
+          </Button>
         </nav>
 
         {/* Mobile Menu Toggle (Simplified for now) */}

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -72,17 +72,17 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            {/* <Button
+            <Button
               size="lg"
-              className="rounded-full px-8 text-lg h-12 bg-primary hover:bg-primary/90 hover:scale-105 transition-all shadow-xl shadow-primary/20"> */}
-            <h1> Apply Now</h1>
-            {/* </Button> */}
-            {/* <Button */}
-            {/* variant="outline"
-            size="lg"
-              className="rounded-full px-8 text-lg h-12 bg-white/50 hover:bg-white transition-all border-primary/20 hover:border-primary/50 text-foreground"> */}
-            <h1>View Program</h1>
-            {/* </Button> */}
+              className="rounded-full px-8 text-lg h-12 bg-primary hover:bg-primary/90 hover:scale-105 transition-all shadow-xl shadow-primary/20">
+              Apply Now
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="rounded-full px-8 text-lg h-12 bg-white/50 hover:bg-white transition-all border-primary/20 hover:border-primary/50 text-foreground">
+              View Program
+            </Button>
           </div>
         </div>
 
@@ -104,6 +104,6 @@ export default function Hero() {
           {/* Tag/Caption */}
         </div>
       </div>
-    </section >
+    </section>
   );
 }

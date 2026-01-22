@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "A Problem Discovery & Startup Thinking Program",
 };
 
-// import SelectionHandles from "@/components/ui/SelectionHandles";
+import SelectionHandles from "@/components/ui/SelectionHandles";
 
 export default function RootLayout({
   children,
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${outfit.variable} ${inter.variable} antialiased font-sans`}>
-        {/* <SelectionHandles /> */}
+        <SelectionHandles />
         {children}
       </body>
     </html>

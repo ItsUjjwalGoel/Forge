@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export default function Footer() {
   return (
@@ -79,9 +79,9 @@ export default function Footer() {
             <h4 className="text-gray-500 text-xs uppercase tracking-wider font-semibold">
               Action
             </h4>
-            {/* <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-2 text-sm font-medium transition-all"> */}
-            <h1>Apply Now</h1>
-            {/* </Button> */}
+            <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-2 text-sm font-medium transition-all">
+              Apply Now
+            </Button>
           </div>
         </div>
       </div>
