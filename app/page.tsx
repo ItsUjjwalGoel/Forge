@@ -3,7 +3,7 @@ import Hero from "@/components/sections/Hero";
 
 // We will import other sections as we build them.
 import WhyForge from "@/components/sections/WhyForge";
-// import LearningPath from "@/components/sections/LearningPath";
+import LearningPath from "@/components/sections/LearningPath";
 // import Perks from "@/components/sections/Perks";
 import Footer from "@/components/layout/Footer";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <WhyForge />
-      {/* <LearningPath /> */}
+      <LearningPath />
       {/* <Perks /> */}
       <Footer />
     </main>
