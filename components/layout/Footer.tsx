@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import instasvg from '../../assets/instagram-1-svgrepo-com.svg'
+import linkedinsvg from '../../assets/linkedin-svgrepo-com.svg'
 export default function Footer() {
   return (
     <footer className="bg-white text-foreground py-16 border-t border-black/5 relative overflow-hidden">
@@ -33,8 +34,8 @@ export default function Footer() {
               </h4>
               <ul className="space-y-3 text-sm font-medium">
                 <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    hello@winnofusion.com
+                  <a href="mailto: admin@winnofusion.com" className="hover:text-primary transition-colors">
+                    admin@winnofusion.com
                   </a>
                 </li>
                 <li>
@@ -42,6 +43,15 @@ export default function Footer() {
                     @forge_program
                   </a>
                 </li>
+                <li className="flex gap-2 p-1  items-center">
+                  <a href="https://www.instagram.com/winnofusion" target="blank" className="hover:text-primary transition-colors">
+                    <Image src={instasvg} alt="" className="h-6 w-6" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/winnofusion/" target="blank" className="hover:text-primary transition-colors">
+                    <Image src={linkedinsvg} alt="" className="h-5 w-5" />
+                  </a>
+                </li>
+
               </ul>
             </div>
 
@@ -79,9 +89,12 @@ export default function Footer() {
             <h4 className="text-gray-500 text-xs uppercase tracking-wider font-semibold">
               Action
             </h4>
-            <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-2 text-sm font-medium transition-all">
-              Apply Now
-            </Button>
+
+            <Link href="https://forms.gle/SbSPP3BD3Zd1xWya7" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-2 text-sm font-medium transition-all">
+                Apply Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

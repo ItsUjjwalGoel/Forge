@@ -50,9 +50,12 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105">
-            Apply Now
-          </Button>
+
+          <Link href="https://forms.gle/SbSPP3BD3Zd1xWya7" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105">
+              Apply Now
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Toggle (Simplified for now) */}

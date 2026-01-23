@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -74,9 +74,11 @@ export default function Perks() {
           meaningful, responsible, and impactful products.
         </p>
         <div className="flex justify-center gap-4 pt-4">
-          <button className="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors font-medium shadow-lg hover:shadow-primary/20">
-            Apply Now
-          </button>
+          <Link href="https://forms.gle/SbSPP3BD3Zd1xWya7" target="_blank" rel="noopener noreferrer">
+            <button className="bg-primary text-white px-8 py-3 rounded-md hover:bg-primary/90 transition-colors font-medium shadow-lg hover:shadow-primary/20">
+              Apply Now
+            </button>
+          </Link>
           <button className="border border-border px-8 py-3 rounded-md hover:bg-secondary transition-colors font-medium">
             Contact / Enquire
           </button>

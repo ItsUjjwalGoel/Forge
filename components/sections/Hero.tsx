@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -72,11 +72,13 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button
-              size="lg"
-              className="rounded-full px-8 text-lg h-12 bg-primary hover:bg-primary/90 hover:scale-105 transition-all shadow-xl shadow-primary/20">
-              Apply Now
-            </Button>
+            <Link href="https://forms.gle/SbSPP3BD3Zd1xWya7" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="rounded-full px-8 text-lg h-12 bg-primary hover:bg-primary/90 hover:scale-105 transition-all shadow-xl shadow-primary/20">
+                Apply Now
+              </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"
